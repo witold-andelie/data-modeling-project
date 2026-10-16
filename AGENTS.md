@@ -1,5 +1,12 @@
 # Project instructions
 
+## Repository language
+
+Use English for all tracked documentation, code comments, user-facing messages,
+commit messages and repository metadata. Do not introduce Chinese text into
+tracked files or filenames. Preserve original source-data values and formal
+mathematical notation.
+
 ## User scope
 
 Build the database coursework first. Data mining belongs to a separate course;
