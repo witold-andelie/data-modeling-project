@@ -1,0 +1,20 @@
+test_compare_preserves_duplicates_and_requires_same_provenance (test_core.CoreTests.test_compare_preserves_duplicates_and_requires_same_provenance) ... ok
+test_constraint_violations_are_not_silently_fixed (test_core.CoreTests.test_constraint_violations_are_not_silently_fixed) ... ok
+test_exact_money (test_core.CoreTests.test_exact_money) ... ok
+test_exclusive_window_boundary (test_core.CoreTests.test_exclusive_window_boundary) ... ok
+test_external_result_contract (test_core.CoreTests.test_external_result_contract) ... ok
+test_external_unknown_duplicates_and_nan_rejected (test_core.CoreTests.test_external_unknown_duplicates_and_nan_rejected) ... ok
+test_feature_totals_avoid_fanout_and_merge_customer_records (test_core.CoreTests.test_feature_totals_avoid_fanout_and_merge_customer_records) ... ok
+test_identity_and_source_review_rows_preserved (test_core.CoreTests.test_identity_and_source_review_rows_preserved) ... ok
+test_independent_reference_handles_fanout_and_identity (test_core.CoreTests.test_independent_reference_handles_fanout_and_identity) ... ok
+test_missing_purchase_timestamp_blocks_preparation (test_core.CoreTests.test_missing_purchase_timestamp_blocks_preparation) ... ok
+test_preparation_is_deterministic (test_core.CoreTests.test_preparation_is_deterministic) ... ok
+test_reference_zero_payments_duplicate_reviews_and_window (test_core.CoreTests.test_reference_zero_payments_duplicate_reviews_and_window) ... ok
+test_snapshot_tampering_rejected (test_core.CoreTests.test_snapshot_tampering_rejected) ... ok
+test_source_parse_failure_has_file_and_line (test_core.CoreTests.test_source_parse_failure_has_file_and_line) ... ok
+test_window_normalization (test_core.CoreTests.test_window_normalization) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.247s
+
+OK

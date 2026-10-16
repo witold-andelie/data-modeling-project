@@ -1,0 +1,75 @@
+@startuml
+!pragma layout smetana
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+hide methods
+title Customer 360 - Neo4j Implementation
+class Customer <<node>> {
+  {field} customer_id : String <<key>>
+}
+class CustomerRecord <<node>> {
+  {field} record_id : String <<key>>
+  {field} customer_id : String
+  {field} zip_prefix : String
+  {field} city : String
+  {field} state : String
+}
+class Category <<node>> {
+  {field} category_name : String <<key>>
+}
+class Product <<node>> {
+  {field} product_id : String <<key>>
+  {field} category_name : String
+  {field} weight_g : Integer
+}
+class Seller <<node>> {
+  {field} seller_id : String <<key>>
+  {field} zip_prefix : String
+  {field} city : String
+  {field} state : String
+}
+class Order <<node>> {
+  {field} order_id : String <<key>>
+  {field} record_id : String
+  {field} status : String
+  {field} purchased_at : ISO local string
+  {field} approved_at : ISO local string
+  {field} delivered_at : ISO local string
+  {field} estimated_at : ISO local string
+}
+class OrderItem <<node>> {
+  {field} order_id : String <<key>>
+  {field} item_number : Integer <<key>>
+  {field} product_id : String
+  {field} seller_id : String
+  {field} price_cents : Integer
+  {field} freight_cents : Integer
+}
+class Payment <<node>> {
+  {field} order_id : String <<key>>
+  {field} payment_sequence : Integer <<key>>
+  {field} payment_type : String
+  {field} installments : Integer
+  {field} amount_cents : Integer
+}
+class Review <<node>> {
+  {field} review_record_id : String <<key>>
+  {field} source_review_id : String
+  {field} order_id : String
+  {field} score : Integer
+  {field} created_at : ISO local string
+}
+CustomerRecord "0..*" --> "1" Customer : IDENTIFIES
+Product "0..*" --> "0..1" Category : IN_CATEGORY
+Order "0..*" --> "1" CustomerRecord : PLACED_BY
+OrderItem "0..*" --> "1" Order : PART_OF
+OrderItem "0..*" --> "1" Product : FOR_PRODUCT
+OrderItem "0..*" --> "1" Seller : SOLD_BY
+Payment "0..*" --> "1" Order : PAYS
+Review "0..*" --> "1" Order : REVIEWS
+note bottom of Payment
+  Composite unique key: (order_id, payment_sequence).
+  Reference properties retained for auditing.
+  Cardinalities validated by loader and audit.
+end note
+@enduml

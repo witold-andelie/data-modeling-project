@@ -1,0 +1,17 @@
+usage: c360.py [-h]
+               {prepare,load,query,compare,export-features,validate-results} ...
+
+Customer 360 database coursework
+
+positional arguments:
+  {prepare,load,query,compare,export-features,validate-results}
+    prepare             Validate original Olist CSVs and prepare a shared
+                        snapshot
+    load                Initialize and load an immutable snapshot
+    query               Execute a business query or constraint audit
+    export-features     Export a retrospective feature contract; no mining
+    validate-results    Check a separate course's annotations; no database
+                        writes
+
+options:
+  -h, --help            show this help message and exit

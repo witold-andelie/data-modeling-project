@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "External customer annotations v1.0",
+  "type": "object",
+  "required": ["schema_version", "feature_export_id", "model_id", "model_version", "generated_at", "assignments"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "feature_export_id": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "model_id": {"type": "string", "minLength": 1},
+    "model_version": {"type": "string", "minLength": 1},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "assignments": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["customer_id", "label"],
+        "properties": {
+          "customer_id": {"type": "string", "minLength": 1},
+          "label": {"type": "string", "minLength": 1},
+          "score": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+        }
+      }
+    }
+  }
+}

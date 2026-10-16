@@ -1,0 +1,67 @@
+@startuml
+!pragma layout smetana
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+hide methods
+title Customer 360 - Conceptual Model
+class Customer {
+  {field} customer_id : CHAR(32)
+}
+class CustomerRecord {
+  {field} record_id : CHAR(32)
+  {field} zip_prefix : VARCHAR(5)
+  {field} city : VARCHAR(100)
+  {field} state : CHAR(2)
+}
+class Category {
+  {field} category_name : VARCHAR(100)
+}
+class Product {
+  {field} product_id : CHAR(32)
+  {field} weight_g : INT
+}
+class Seller {
+  {field} seller_id : CHAR(32)
+  {field} zip_prefix : VARCHAR(5)
+  {field} city : VARCHAR(100)
+  {field} state : CHAR(2)
+}
+class Order {
+  {field} order_id : CHAR(32)
+  {field} status : VARCHAR(30)
+  {field} purchased_at : DATETIME
+  {field} approved_at : DATETIME
+  {field} delivered_at : DATETIME
+  {field} estimated_at : DATETIME
+}
+class OrderItem {
+  {field} item_number : INT
+  {field} price_cents : BIGINT
+  {field} freight_cents : BIGINT
+}
+class Payment {
+  {field} payment_sequence : INT
+  {field} payment_type : VARCHAR(30)
+  {field} installments : INT
+  {field} amount_cents : BIGINT
+}
+class Review {
+  {field} review_record_id : VARCHAR(40)
+  {field} source_review_id : CHAR(32)
+  {field} score : INT
+  {field} created_at : DATETIME
+}
+CustomerRecord "0..*" --> "1" Customer : identifies
+Product "0..*" --> "0..1" Category : in_category
+Order "0..*" --> "1" CustomerRecord : placed_by
+OrderItem "0..*" --> "1" Order : part_of
+OrderItem "0..*" --> "1" Product : for_product
+OrderItem "0..*" --> "1" Seller : sold_by
+Payment "0..*" --> "1" Order : pays
+Review "0..*" --> "1" Order : reviews
+note bottom of CustomerRecord
+  Source customer_id identifies a record.
+  customer_unique_id identifies a Customer.
+  Location remains on the source record.
+end note
+@enduml

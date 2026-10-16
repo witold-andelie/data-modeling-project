@@ -1,0 +1,18 @@
+﻿{
+    "checked_at":  "2026-10-16T18:13:14.5651913Z",
+    "service":  "mysql",
+    "container_id":  "50ce77d71403605af3895761c749c571dbcde89216718d98b0aff2b3372545e2",
+    "container_name":  "/customer360-course-mysql-1",
+    "status":  "running",
+    "oom_killed":  false,
+    "image":  "mysql:8.4",
+    "image_id":  "sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70",
+    "image_digests":  [
+                          "mysql@sha256:24989179f58856db763f418010c1169fecc944e3ec1ea7e921572d83eb070f70"
+                      ],
+    "memory_bytes":  536870912,
+    "memory_swap_bytes":  536870912,
+    "memory_reservation_bytes":  268435456,
+    "expected_memory_bytes":  536870912,
+    "limits_match":  true
+}

@@ -1,0 +1,71 @@
+{
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "parameters": {
+    "customer_id": "4c93744516667ad3b8f1fb645a3116a4",
+    "start": "2016-01-01T00:00:00",
+    "end": "2019-01-01T00:00:00",
+    "low_score": 2
+  },
+  "passed": true,
+  "executed_at": "2026-10-16T18:11:00.885292+00:00",
+  "checks": [
+    {
+      "equal": true,
+      "query_id": "Q1",
+      "mysql_rows": 2,
+      "neo4j_rows": 2,
+      "elapsed_seconds": 0.32293
+    },
+    {
+      "equal": true,
+      "query_id": "Q2",
+      "mysql_rows": 96096,
+      "neo4j_rows": 96096,
+      "elapsed_seconds": 1.578618
+    },
+    {
+      "equal": true,
+      "query_id": "Q3",
+      "mysql_rows": 2,
+      "neo4j_rows": 2,
+      "elapsed_seconds": 0.410271
+    },
+    {
+      "equal": true,
+      "query_id": "Q4",
+      "mysql_rows": 94806,
+      "neo4j_rows": 94806,
+      "elapsed_seconds": 1.63392
+    },
+    {
+      "equal": true,
+      "query_id": "Q5",
+      "mysql_rows": 243,
+      "neo4j_rows": 243,
+      "elapsed_seconds": 0.967008
+    },
+    {
+      "equal": true,
+      "query_id": "constraints",
+      "mysql_rows": 22,
+      "neo4j_rows": 22,
+      "elapsed_seconds": 2.97135
+    }
+  ],
+  "server_version": "8.4.11",
+  "counts": {
+    "customers": 96096,
+    "customer_records": 99441,
+    "categories": 73,
+    "products": 32951,
+    "sellers": 3095,
+    "orders": 99441,
+    "order_items": 112650,
+    "payments": 103886,
+    "reviews": 100000
+  },
+  "driver_version": "9.7.0",
+  "counts_equal": true,
+  "timing_scope": "One observed execution per query including connection; not a controlled benchmark",
+  "limitation": "Independent algorithmic reference plus real sample for human inspection; no causal or benchmark claims"
+}

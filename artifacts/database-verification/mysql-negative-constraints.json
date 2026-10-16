@@ -1,0 +1,49 @@
+{
+  "engine": "mysql",
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "executed_at": "2026-10-16T18:12:48.682462+00:00",
+  "checks": [
+    {
+      "rule": "C1",
+      "enforcement": "native",
+      "expected_error": 1062,
+      "observed_error": 1062,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C2",
+      "enforcement": "native",
+      "expected_error": 1452,
+      "observed_error": 1452,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C3",
+      "enforcement": "native",
+      "expected_error": 3819,
+      "observed_error": 3819,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C4",
+      "enforcement": "native",
+      "expected_error": 3819,
+      "observed_error": 3819,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C5",
+      "enforcement": "native",
+      "expected_error": 3819,
+      "observed_error": 3819,
+      "passed": true,
+      "rolled_back": true
+    }
+  ],
+  "clean_after_rollback": true,
+  "passed": true
+}

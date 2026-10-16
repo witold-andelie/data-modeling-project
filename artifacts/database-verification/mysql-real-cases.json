@@ -1,0 +1,44 @@
+{
+  "engine": "mysql",
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "checks": [
+    {
+      "case": "integer-cent arithmetic",
+      "passed": true
+    },
+    {
+      "case": "no payment retained",
+      "passed": true
+    },
+    {
+      "case": "both review rows retained",
+      "passed": true
+    },
+    {
+      "case": "known category pair",
+      "passed": true
+    },
+    {
+      "case": "split payments",
+      "passed": true
+    },
+    {
+      "case": "zero payments",
+      "passed": true
+    },
+    {
+      "case": "customer order amounts",
+      "passed": true
+    },
+    {
+      "case": "customer identity merge",
+      "passed": true
+    },
+    {
+      "case": "at least five real instances per class",
+      "passed": true
+    }
+  ],
+  "executed_at": "2026-10-16T18:16:22.622852+00:00",
+  "passed": true
+}

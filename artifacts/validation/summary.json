@@ -1,0 +1,68 @@
+{
+  "executed_at": "2026-10-16T18:47:05.207516+00:00",
+  "python": "3.13.10 (tags/v3.13.10:4fd8843, Dec  2 2025, 15:08:18) [MSC v.1944 64 bit (AMD64)]",
+  "checks": [
+    {
+      "check": "unit-tests",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "framework",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "cli",
+      "passed": true,
+      "exit_code": 0
+    },
+    {
+      "check": "compose-config",
+      "passed": true
+    },
+    {
+      "check": "optional-sqlglot-parse",
+      "passed": true,
+      "version": "30.12.0",
+      "files": [
+        {
+          "file": "sql\\00_schema.sql",
+          "statements": 10
+        },
+        {
+          "file": "sql\\constraints.sql",
+          "statements": 1
+        },
+        {
+          "file": "sql\\queries\\Q1.sql",
+          "statements": 1
+        },
+        {
+          "file": "sql\\queries\\Q2.sql",
+          "statements": 1
+        },
+        {
+          "file": "sql\\queries\\Q3.sql",
+          "statements": 1
+        },
+        {
+          "file": "sql\\queries\\Q4.sql",
+          "statements": 1
+        },
+        {
+          "file": "sql\\queries\\Q5.sql",
+          "statements": 1
+        }
+      ],
+      "limitation": "Parser check only; not MySQL execution"
+    },
+    {
+      "check": "optional-json-schema-definitions",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "database_execution": "not part of this check",
+  "uml_rendering": "not part of this check"
+}

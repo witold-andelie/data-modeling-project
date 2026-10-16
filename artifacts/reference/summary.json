@@ -1,0 +1,46 @@
+{
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "generated_at": "2026-10-16T18:10:53.850157+00:00",
+  "source_sha256": {
+    "olist_customers_dataset.csv": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+    "olist_products_dataset.csv": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+    "olist_sellers_dataset.csv": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+    "olist_orders_dataset.csv": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+    "olist_order_items_dataset.csv": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "olist_order_payments_dataset.csv": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+    "olist_order_reviews_dataset.csv": "0dff69f6fed33a13648020198ea94d7ae12afbdd4904186c6cd904e27a3e1ccd"
+  },
+  "counts": {
+    "customers": 96096,
+    "customer_records": 99441,
+    "categories": 73,
+    "products": 32951,
+    "sellers": 3095,
+    "orders": 99441,
+    "order_items": 112650,
+    "payments": 103886,
+    "reviews": 100000
+  },
+  "expected_rows": {
+    "Q1": 2,
+    "Q2": 96096,
+    "Q3": 2,
+    "Q4": 94806,
+    "Q5": 243,
+    "constraints": 22
+  },
+  "sample_cases": {
+    "on_time": "00010242fe8c5a6d1ba2dd792cb16214",
+    "late": "0005a1a1728c9d785b8e2b08b904576c",
+    "multiple_payments": "0016dfedd97fc2950e388d2971d718c7",
+    "multiple_categories": "002f98c0f7efd42638ed6100ca699b42",
+    "multiple_reviews": "0035246a40f520710769010f752e7507",
+    "unknown_category": "0046e1d57f4c07c8c92ab26be8c3dfc0",
+    "selected_customer": "5741ea1f91b5fbab2bd2dc653a5b5099",
+    "no_payment": "bfbd0f9bdef84302105ad712db648a6c"
+  },
+  "source_checksums_verified": true,
+  "passed": true,
+  "method": "Independent Python sets, integer sums and combinations; no SQL/Cypher",
+  "limitation": "Algorithmic expectations and reviewable real sample; teacher review remains pending"
+}

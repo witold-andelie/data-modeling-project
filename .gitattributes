@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+# Preserve the exact PlantUML bytes recorded by the rendering manifest.
+models/*.puml -text

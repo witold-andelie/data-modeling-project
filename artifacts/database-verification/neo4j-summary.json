@@ -1,0 +1,83 @@
+{
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "parameters": {
+    "customer_id": "4c93744516667ad3b8f1fb645a3116a4",
+    "start": "2016-01-01T00:00:00",
+    "end": "2019-01-01T00:00:00",
+    "low_score": 2
+  },
+  "passed": true,
+  "executed_at": "2026-10-16T18:24:27.069435+00:00",
+  "checks": [
+    {
+      "equal": true,
+      "query_id": "Q1",
+      "left_rows": 2,
+      "right_rows": 2,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 0.196714
+    },
+    {
+      "equal": true,
+      "query_id": "Q2",
+      "left_rows": 96096,
+      "right_rows": 96096,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 2.207978
+    },
+    {
+      "equal": true,
+      "query_id": "Q3",
+      "left_rows": 2,
+      "right_rows": 2,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 0.428772
+    },
+    {
+      "equal": true,
+      "query_id": "Q4",
+      "left_rows": 94806,
+      "right_rows": 94806,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 2.301471
+    },
+    {
+      "equal": true,
+      "query_id": "Q5",
+      "left_rows": 243,
+      "right_rows": 243,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 0.605308
+    },
+    {
+      "equal": true,
+      "query_id": "constraints",
+      "left_rows": 22,
+      "right_rows": 22,
+      "left_engine": "python-reference",
+      "right_engine": "neo4j",
+      "elapsed_seconds": 2.250114
+    }
+  ],
+  "server_version": "5.26.32",
+  "counts": {
+    "customers": 96096,
+    "customer_records": 99441,
+    "categories": 73,
+    "products": 32951,
+    "sellers": 3095,
+    "orders": 99441,
+    "order_items": 112650,
+    "payments": 103886,
+    "reviews": 100000
+  },
+  "driver_version": "5.28.8",
+  "counts_equal": true,
+  "timing_scope": "One observed execution per query including connection; not a controlled benchmark",
+  "limitation": "Independent algorithmic reference plus real sample for human inspection; no causal or benchmark claims"
+}

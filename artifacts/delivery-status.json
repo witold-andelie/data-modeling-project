@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-16T18:47:05.773583+00:00",
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "database_implementation_ready": true,
+  "checks": [
+    {
+      "check": "local validation",
+      "passed": true
+    },
+    {
+      "check": "real data and minimum class coverage",
+      "passed": true
+    },
+    {
+      "check": "mysql summary",
+      "passed": true
+    },
+    {
+      "check": "mysql negative-constraints",
+      "passed": true
+    },
+    {
+      "check": "mysql real-cases",
+      "passed": true
+    },
+    {
+      "check": "mysql inspected limits and image identity",
+      "passed": true
+    },
+    {
+      "check": "neo4j summary",
+      "passed": true
+    },
+    {
+      "check": "neo4j negative-constraints",
+      "passed": true
+    },
+    {
+      "check": "neo4j real-cases",
+      "passed": true
+    },
+    {
+      "check": "neo4j inspected limits and image identity",
+      "passed": true
+    },
+    {
+      "check": "three-way query and audit comparison",
+      "passed": true
+    },
+    {
+      "check": "task databases stopped gracefully with volumes preserved",
+      "passed": true
+    },
+    {
+      "check": "three current UML PNGs",
+      "passed": true
+    },
+    {
+      "check": "versioned real customer feature export",
+      "passed": true
+    },
+    {
+      "check": "normalization argument",
+      "passed": true
+    }
+  ],
+  "deferred_by_user": [
+    "report prose",
+    "cover metadata",
+    "final report PDF and source appendix"
+  ],
+  "external_requirements": [
+    "three genuine teacher consultations; never fabricated"
+  ],
+  "timing_scope": "observed runs only; no controlled performance ranking"
+}

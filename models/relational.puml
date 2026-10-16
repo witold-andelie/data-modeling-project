@@ -1,0 +1,74 @@
+@startuml
+!pragma layout smetana
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+hide methods
+title Customer 360 - MySQL Implementation
+class "Customer\ncustomers" as Customer <<table>> {
+  {field} customer_id : CHAR(32) <<PK>>
+}
+class "CustomerRecord\ncustomer_records" as CustomerRecord <<table>> {
+  {field} record_id : CHAR(32) <<PK>>
+  {field} customer_id : CHAR(32) <<FK>>
+  {field} zip_prefix : VARCHAR(5)
+  {field} city : VARCHAR(100)
+  {field} state : CHAR(2)
+}
+class "Category\ncategories" as Category <<table>> {
+  {field} category_name : VARCHAR(100) <<PK>>
+}
+class "Product\nproducts" as Product <<table>> {
+  {field} product_id : CHAR(32) <<PK>>
+  {field} category_name : VARCHAR(100) <<FK>> [nullable]
+  {field} weight_g : INT [nullable]
+}
+class "Seller\nsellers" as Seller <<table>> {
+  {field} seller_id : CHAR(32) <<PK>>
+  {field} zip_prefix : VARCHAR(5)
+  {field} city : VARCHAR(100)
+  {field} state : CHAR(2)
+}
+class "Order\norders" as Order <<table>> {
+  {field} order_id : CHAR(32) <<PK>>
+  {field} record_id : CHAR(32) <<FK>>
+  {field} status : VARCHAR(30)
+  {field} purchased_at : DATETIME
+  {field} approved_at : DATETIME [nullable]
+  {field} delivered_at : DATETIME [nullable]
+  {field} estimated_at : DATETIME [nullable]
+}
+class "OrderItem\norder_items" as OrderItem <<table>> {
+  {field} order_id : CHAR(32) <<PK>> <<FK>>
+  {field} item_number : INT <<PK>>
+  {field} product_id : CHAR(32) <<FK>>
+  {field} seller_id : CHAR(32) <<FK>>
+  {field} price_cents : BIGINT
+  {field} freight_cents : BIGINT
+}
+class "Payment\npayments" as Payment <<table>> {
+  {field} order_id : CHAR(32) <<PK>> <<FK>>
+  {field} payment_sequence : INT <<PK>>
+  {field} payment_type : VARCHAR(30)
+  {field} installments : INT
+  {field} amount_cents : BIGINT
+}
+class "Review\nreviews" as Review <<table>> {
+  {field} review_record_id : VARCHAR(40) <<PK>>
+  {field} source_review_id : CHAR(32)
+  {field} order_id : CHAR(32) <<FK>>
+  {field} score : INT
+  {field} created_at : DATETIME [nullable]
+}
+CustomerRecord "0..*" --> "1" Customer : customer_id
+Product "0..*" --> "0..1" Category : category_name
+Order "0..*" --> "1" CustomerRecord : record_id
+OrderItem "0..*" --> "1" Order : order_id
+OrderItem "0..*" --> "1" Product : product_id
+OrderItem "0..*" --> "1" Seller : seller_id
+Payment "0..*" --> "1" Order : order_id
+Review "0..*" --> "1" Order : order_id
+note bottom of OrderItem
+  Composite primary key: (order_id, item_number).
+  Money is BRL integer cents.
+end note
+@enduml

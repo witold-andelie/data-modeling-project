@@ -1,0 +1,56 @@
+{
+  "customer_count": 96096,
+  "customer_record_count": 99441,
+  "customers_with_multiple_records": 2997,
+  "max_records_per_customer": 17,
+  "customers_with_multiple_locations": 252,
+  "customer_location_counterexample": {
+    "customer_id": "004b45ec5c64187465168251cd1c9c2f",
+    "locations": [
+      [
+        "57035",
+        "maceio",
+        "AL"
+      ],
+      [
+        "57055",
+        "maceio",
+        "AL"
+      ]
+    ]
+  },
+  "zip_prefixes_with_multiple_city_states": 39,
+  "zip_location_counterexample": {
+    "zip_prefix": "06806",
+    "city_states": [
+      [
+        "embu",
+        "SP"
+      ],
+      [
+        "embu das artes",
+        "SP"
+      ]
+    ]
+  },
+  "observed_max_orders_per_customer_record": 1,
+  "source_review_rows": 100000,
+  "distinct_source_review_ids": 99173,
+  "repeated_source_review_ids": 802,
+  "max_source_review_id_multiplicity": 3,
+  "products": 32951,
+  "products_without_category": 610,
+  "purchase_timestamp_min": "2016-09-04 21:15:19",
+  "purchase_timestamp_max": "2018-10-17 17:30:18",
+  "order_statuses": {
+    "delivered": 96478,
+    "invoiced": 314,
+    "shipped": 1107,
+    "processing": 301,
+    "unavailable": 609,
+    "canceled": 625,
+    "created": 5,
+    "approved": 2
+  },
+  "limitation": "Observed dependencies may refute a proposed FD; they do not establish a semantic FD"
+}

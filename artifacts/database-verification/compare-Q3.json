@@ -1,0 +1,9 @@
+{
+  "equal": true,
+  "query_id": "Q3",
+  "left_rows": 2,
+  "right_rows": 2,
+  "left_engine": "mysql",
+  "right_engine": "neo4j",
+  "reference_equal": true
+}

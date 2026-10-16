@@ -1,0 +1,18 @@
+﻿{
+    "checked_at":  "2026-10-16T18:24:51.4316121Z",
+    "service":  "neo4j",
+    "container_id":  "f9eac64ea880db9019b3891787682e7445ac16a41dca9400c0b1ef68a0a9bee5",
+    "container_name":  "/customer360-course-neo4j-1",
+    "status":  "running",
+    "oom_killed":  false,
+    "image":  "neo4j:5.26-community",
+    "image_id":  "sha256:f1e52d4dc6da122468c4a3c1050a4f5e117f6d3268625237c34d49166f0d6082",
+    "image_digests":  [
+                          "neo4j@sha256:f1e52d4dc6da122468c4a3c1050a4f5e117f6d3268625237c34d49166f0d6082"
+                      ],
+    "memory_bytes":  1073741824,
+    "memory_swap_bytes":  1073741824,
+    "memory_reservation_bytes":  536870912,
+    "expected_memory_bytes":  1073741824,
+    "limits_match":  true
+}

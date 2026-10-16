@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Retrospective customer feature export v1.0",
+  "type": "object",
+  "required": ["schema_version", "dataset_id", "feature_export_id", "window_start", "window_end_exclusive", "currency", "money_unit", "temporal_semantics", "point_in_time_safe", "population", "rows"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "dataset_id": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "feature_export_id": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "window_start": {"type": "string"},
+    "window_end_exclusive": {"type": "string"},
+    "currency": {"const": "BRL"},
+    "money_unit": {"const": "cent"},
+    "temporal_semantics": {"const": "retrospective_snapshot"},
+    "point_in_time_safe": {"const": false},
+    "population": {"type": "string"},
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["customer_id", "order_count", "payment_total_cents", "last_purchase_at", "recency_days"],
+        "properties": {
+          "customer_id": {"type": "string", "minLength": 1},
+          "order_count": {"type": "integer", "minimum": 1},
+          "payment_total_cents": {"type": "integer", "minimum": 0},
+          "last_purchase_at": {"type": "string"},
+          "recency_days": {"type": "integer", "minimum": 0}
+        }
+      }
+    }
+  }
+}

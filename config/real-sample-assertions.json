@@ -1,0 +1,18 @@
+{
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "customer_id": "4c93744516667ad3b8f1fb645a3116a4",
+  "customer_orders": {
+    "5741ea1f91b5fbab2bd2dc653a5b5099": 28221,
+    "98b737f8bd00d73d9f61f7344aadf717": 28367
+  },
+  "customer_order_count": 2,
+  "customer_payment_total_cents": 56588,
+  "multiple_payment_order": "0016dfedd97fc2950e388d2971d718c7",
+  "payment_parts_cents": [1792, 5263],
+  "payment_sum_cents": 7055,
+  "no_payment_order": "bfbd0f9bdef84302105ad712db648a6c",
+  "multiple_review_order": "0035246a40f520710769010f752e7507",
+  "review_scores": [5, 5],
+  "category_pair_order": "002f98c0f7efd42638ed6100ca699b42",
+  "category_pair": ["brinquedos", "consoles_games"]
+}

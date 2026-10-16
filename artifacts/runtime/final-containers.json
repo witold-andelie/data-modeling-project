@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-16 18:25:42 UTC",
+  "containers": [
+    {
+      "name": "/customer360-course-mysql-1",
+      "id": "50ce77d71403605af3895761c749c571dbcde89216718d98b0aff2b3372545e2",
+      "status": "exited",
+      "memory_bytes": 536870912,
+      "memory_swap_bytes": 536870912,
+      "exit_code": 0,
+      "oom_killed": false
+    },
+    {
+      "name": "/customer360-course-neo4j-1",
+      "id": "f9eac64ea880db9019b3891787682e7445ac16a41dca9400c0b1ef68a0a9bee5",
+      "status": "exited",
+      "memory_bytes": 1073741824,
+      "memory_swap_bytes": 1073741824,
+      "exit_code": 0,
+      "oom_killed": false
+    }
+  ],
+  "all_project_databases_stopped": true,
+  "volumes_preserved": true
+}

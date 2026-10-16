@@ -1,0 +1,25 @@
+﻿{
+    "rendered_at":  "2026-10-16T18:13:37.0466561Z",
+    "jar_sha256":  "0f77e5f769836b3dee340e207fe497c3e4c43e973d559e3c306915da9c32e34c",
+    "java_heap_max":  "256m",
+    "images":  [
+                   {
+                       "source":  "conceptual.puml",
+                       "png":  "conceptual.png",
+                       "bytes":  36227,
+                       "source_sha256":  "a2a2d0cf9886ab5c1998f076b033b81bd15851c4dcfac4ba6eb17aa3744ddb94"
+                   },
+                   {
+                       "source":  "graph.puml",
+                       "png":  "graph.png",
+                       "bytes":  43523,
+                       "source_sha256":  "6a3be25e1b6a76fa0f6c1173e0b16b3bee4ec9fb14058e328e5be51e684e927e"
+                   },
+                   {
+                       "source":  "relational.puml",
+                       "png":  "relational.png",
+                       "bytes":  53742,
+                       "source_sha256":  "0376e1918d86be02ce888f4228fc7b91c6cfa24152cfb9a4814b27768c3b49f2"
+                   }
+               ]
+}

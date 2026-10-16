@@ -1,0 +1,48 @@
+{
+  "engine": "neo4j",
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "executed_at": "2026-10-16T18:24:24.362256+00:00",
+  "checks": [
+    {
+      "rule": "C1",
+      "enforcement": "native",
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C2",
+      "enforcement": "audit",
+      "violations": 1,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C3",
+      "enforcement": "audit",
+      "violations": 1,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C4",
+      "enforcement": "audit",
+      "violations": 1,
+      "passed": true,
+      "rolled_back": true
+    },
+    {
+      "rule": "C5",
+      "enforcement": "audit",
+      "violations": 1,
+      "passed": true,
+      "rolled_back": true
+    }
+  ],
+  "clean_after_rollback": true,
+  "empty_input_audit": {
+    "expected_rows": 22,
+    "actual_rows": 22,
+    "passed": true
+  },
+  "passed": true
+}

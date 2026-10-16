@@ -1,0 +1,103 @@
+{
+  "dataset_id": "06e60f81265902ca3e7e2620dbb15c53a49301c1631a120ad160e6abbb364ff3",
+  "query_id": "constraints",
+  "parameters": {
+    "customer_id": "4c93744516667ad3b8f1fb645a3116a4",
+    "start": "2016-01-01T00:00:00",
+    "end": "2019-01-01T00:00:00",
+    "low_score": 2
+  },
+  "rows": [
+    {
+      "rule": "C1:customers",
+      "violations": 0
+    },
+    {
+      "rule": "C1:customer_records",
+      "violations": 0
+    },
+    {
+      "rule": "C1:categories",
+      "violations": 0
+    },
+    {
+      "rule": "C1:products",
+      "violations": 0
+    },
+    {
+      "rule": "C1:sellers",
+      "violations": 0
+    },
+    {
+      "rule": "C1:orders",
+      "violations": 0
+    },
+    {
+      "rule": "C1:order_items",
+      "violations": 0
+    },
+    {
+      "rule": "C1:payments",
+      "violations": 0
+    },
+    {
+      "rule": "C1:reviews",
+      "violations": 0
+    },
+    {
+      "rule": "C2:customer_records.customer_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:products.category_name",
+      "violations": 0
+    },
+    {
+      "rule": "C2:orders.record_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:order_items.order_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:order_items.product_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:order_items.seller_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:payments.order_id",
+      "violations": 0
+    },
+    {
+      "rule": "C2:reviews.order_id",
+      "violations": 0
+    },
+    {
+      "rule": "C3:order_items",
+      "violations": 0
+    },
+    {
+      "rule": "C3:payments",
+      "violations": 0
+    },
+    {
+      "rule": "C4:reviews",
+      "violations": 0
+    },
+    {
+      "rule": "C5:order_items",
+      "violations": 0
+    },
+    {
+      "rule": "C5:payments",
+      "violations": 0
+    }
+  ],
+  "engine": "neo4j",
+  "executed_at": "2026-10-16T18:24:36.106669+00:00",
+  "elapsed_seconds": 2.250114
+}
